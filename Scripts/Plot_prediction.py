@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import math
 
-def plot_prediction(y1, y2, n_toplot=10**10, title = "Model Evaluation"):
+def plot_performance(y1, y2, n_toplot=10**10, title = "Model Evaluation"):
     
     from scipy.stats import gaussian_kde
     from sklearn.metrics import r2_score, mean_squared_error
