@@ -15,7 +15,7 @@ FirnLearn is built upon widely used Python libraries (Keras and Scikit-learn).
 
 # FirnLearn Models
 
-**Artificial Neural Network**: Artificial Neural Networks (ANNs) are nonlinear statistical models that recognize relationships and patterns between the input and output variables of structured data in a manner that models the biological neurons of the human brain (Hatie and others, 2009; O’Shea and Nash, 2015). The FirnLearn ANN model is trained with the training_ANN.py script 
+**Artificial Neural Network**: Artificial Neural Networks (ANNs) are nonlinear statistical models that recognize relationships and patterns between the input and output variables of structured data in a manner that models the biological neurons of the human brain (Hatie and others, 2009; O’Shea and Nash, 2015). The FirnLearn ANN model is trained with the ann_training.py script 
 
 **Random Forest**: The random forest is an ensemble method that builds multiple decision trees during training and averages their result to get a more accurate and stable output (Breiman, 2001). The Random Forest model builds these different trees independently and in parallel. 
 
