@@ -1,7 +1,9 @@
+"""
+@author: Megan Thompson-Munson
 
+FirnLearn: A Neural Network based approach to Firn Densification Modeling for Antarctica
 
-
-
+Extracting the dataset from the SUMup dataset"""
 
 # For opening, viewing, and printing dataset info
 import numpy as np
