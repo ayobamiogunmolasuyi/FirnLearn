@@ -47,3 +47,18 @@ output_scaler = MinMaxScaler(feature_range=(0, 1))
 Y_train_scaled = output_scaler.fit_transform(Y_train.reshape(-1, 1)).ravel()
 Y_test_scaled = output_scaler.transform(Y_test.reshape(-1, 1)).ravel()
 Y_validation_scaled = output_scaler.transform(Y_validation.reshape(-1, 1)).ravel()
+
+rf_params = {
+        "n_estimators": [50, 100,200, 300,500],
+        "max_depth": [2,4,6, None],
+        "min_samples_split": [1,2,5,9,10],
+        #"criterion": ("absolute_error","squared_error"),
+}
+rf_ensemble = ensemble.RandomForestRegressor(**rf_params)
+
+model_rf = GridSearchCV(rf_ensemble, param_grid = params, verbose=20)
+model_rf
+
+model_rf.fit(X_train_scaled, Y_train_scaled)
+
+model_rf.best_params_
