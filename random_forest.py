@@ -56,9 +56,21 @@ rf_params = {
 }
 rf_ensemble = ensemble.RandomForestRegressor(**rf_params)
 
-model_rf = GridSearchCV(rf_ensemble, param_grid = params, verbose=20)
-model_rf
+model_rf = GridSearchCV(rf_ensemble, param_grid = rf_params, verbose=20)
 
 model_rf.fit(X_train_scaled, Y_train_scaled)
 
 model_rf.best_params_
+
+gb_params = {
+            "n_estimators": [25,50,100], 
+            "max_depth": [2,6,10], 
+            "min_samples_split": [2,5,10],
+            "learning_rate": [0.1,0.5],
+            "loss": ('huber', 'squared_error'), 
+            "validation_fraction": [0.1,0.2]
+    }
+gb_ensemble = ensemble.GradientBoostingRegressor(**gb_params)
+
+model_gb = GridSearchCV(gb_ensemble, param_grid = gb_params, verbose=20)
+model_gb.fit(X_train_scaled, Y_train_scaled)
