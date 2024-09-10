@@ -22,7 +22,7 @@ Three main models developed for FirnLearn are described below/ Profile predictio
 
 **Gradient Boosting**: Like the Random Forest model, the Gradient Boosting model is an ensemble method that combines the results of different trees. However, the trees in Gradient Boosting are built sequentially, with each new tree being trained to correct the errors made by the preceding tree.
 
-The rf_gb.py script contains cross validation and training of both the random forest and gradient boosting models.
+The rf_gb.py script contains the cross validation and training codes for both the random forest and gradient boosting models.
 
 # Data
 
