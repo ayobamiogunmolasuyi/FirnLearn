@@ -58,6 +58,7 @@ rf_ensemble = ensemble.RandomForestRegressor(**rf_params)
 
 model_rf = GridSearchCV(rf_ensemble, param_grid = rf_params, verbose=20)
 
+#fit the random forest model to the training data
 model_rf.fit(X_train_scaled, Y_train_scaled)
 
 model_rf.best_params_
@@ -72,5 +73,9 @@ gb_params = {
     }
 gb_ensemble = ensemble.GradientBoostingRegressor(**gb_params)
 
+#fit the gradient boosting model to the training data
 model_gb = GridSearchCV(gb_ensemble, param_grid = gb_params, verbose=20)
 model_gb.fit(X_train_scaled, Y_train_scaled)
+
+#check best parameters
+model_gb.best_params_
