@@ -24,3 +24,7 @@ Three main models developed for FirnLearn are described below/ Profile predictio
 
 The rf_gb.py script contains cross validation and training of both the random forest and gradient boosting models.
 
+# Data
+
+The data used to train and run the FirnLearn models are in the Data folder of this repository. Scripts to import, process and use the SUMup dataset can be found at https://github.com/MeganTM/SUMMEDup
+
