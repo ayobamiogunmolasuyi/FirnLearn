@@ -14,7 +14,7 @@ FirnLearn is an Antarctic steady-state firn densification model based on data sc
 FirnLearn is built upon widely used Python libraries (Keras and Scikit-learn).
 
 # FirnLearn Models
-Profile predictions with these models can be done using the Profile_predictions.py script. 
+Three main models developed for FirnLearn are described below/ Profile predictions with these models can be conducted using the Profile_predictions.py script. 
 
 **Artificial Neural Network**: Artificial Neural Networks (ANNs) are nonlinear statistical models that recognize relationships and patterns between the input and output variables of structured data in a manner that models the biological neurons of the human brain (Hatie and others, 2009; O’Shea and Nash, 2015). The FirnLearn ANN model is trained with the ann_training.py script. 
 
