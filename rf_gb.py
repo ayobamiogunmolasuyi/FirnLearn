@@ -5,6 +5,7 @@ ayobami.o.ogunmolasuyi.th@dartmouth.edu
 
 FirnLearn: A Neural Network based approach to Firn Densification Modeling for Antarctica
 
+Create the random forest and gradient boosting files
 """
 
 import numpy as np
