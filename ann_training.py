@@ -7,7 +7,6 @@ ayobami.o.ogunmolasuyi.th@dartmouth.edu
 
 FirnLearn: A Neural Network based approach to Firn Densification Modeling for Antarctica
 
-Creating the training, validation, and test datasets
 """
 import numpy as np
 import pandas as pd
