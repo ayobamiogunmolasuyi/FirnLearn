@@ -88,7 +88,7 @@ def train_model(activation1,learning_rate,n_epochs, X_train, Y_train):
                                 monitor='val_loss',   # The quantity to monitor for saving weights (e.g., validation loss)
                                 verbose=1,            # Verbosity (1: show messages)
                                 save_best_only=True,  # Save only the best model
-                                mode='min'            # Save mode ('min' for loss, 'max' for accuracy, etc.)
+                                mode='min'            
                             )
     
     history = model.fit(X_train_scaled, Y_train_scaled, validation_data =(X_validation_scaled,Y_validation_scaled), epochs=n_epochs, batch_size = 32,callbacks=[checkpoint])
