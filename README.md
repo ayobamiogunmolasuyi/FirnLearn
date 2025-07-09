@@ -26,5 +26,6 @@ The rf_gb.py script contains the cross validation and training codes for both th
 
 # Data
 
+The 2024 release of the SUMup dataset can be found at https://arcticdata.io/catalog/view/doi:10.18739/A2M61BR5M.
 The data used to train and run the FirnLearn models are in the Data folder of this repository. Scripts to import, process and use the SUMup dataset can be found at https://github.com/MeganTM/SUMMEDup
 
