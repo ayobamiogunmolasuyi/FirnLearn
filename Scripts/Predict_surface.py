@@ -1,3 +1,12 @@
+!/usr/bin/env python3
+
+"""
+@author: Ayobami Ogunmolasuyi
+Thayer School of Engineering at Dartmouth College
+ayobami.o.ogunmolasuyi.th@dartmouth.edu
+
+FirnLearn: A Neural Network based approach to Firn Densification Modeling for Antarctica
+"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
