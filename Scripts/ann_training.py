@@ -62,15 +62,15 @@ def train_model(activation1,learning_rate,n_epochs, X_train, Y_train):
 
     
     #for k in range (n_layers):
+    model.add(layers.Dense(100, activation=activation1))
+    
     model.add(layers.Dense(50, activation=activation1))
     
-    model.add(layers.Dense(40, activation=activation1))
-    
+    model.add(layers.Dense(20, activation=activation1))
+        
     model.add(layers.Dense(20, activation=activation1))
     
     model.add(layers.Dense(10, activation=activation1))
-    
-    model.add(layers.Dense(5, activation=activation1))
     
     
     # Add fully connected layer with a sigmoid activation function
@@ -88,20 +88,23 @@ def train_model(activation1,learning_rate,n_epochs, X_train, Y_train):
                                 monitor='val_loss',   # The quantity to monitor for saving weights (e.g., validation loss)
                                 verbose=1,            # Verbosity (1: show messages)
                                 save_best_only=True,  # Save only the best model
-                                mode='min'            
+                                mode='min'            # Save mode ('min' for loss, 'max' for accuracy, etc.)
                             )
     
-    history = model.fit(X_train_scaled, Y_train_scaled, validation_data =(X_validation_scaled,Y_validation_scaled), epochs=n_epochs, batch_size = 32,callbacks=[checkpoint])
+    history = model.fit(X_train_scaled, Y_train_scaled, validation_data =(X_validation_scaled,Y_validation_scaled), epochs=n_epochs, batch_size = 64,callbacks=[checkpoint])
     
     # Return compiled network
     return history,model
-
 
 history2, model2 = train_model('LeakyReLU', 0.0001, 200,X_train_scaled, Y_train_scaled)
 
 model2.load_weights("best_model_weights.h5")
 
 model2.save("model2.h5")
+
+
+
+
 
 
 
